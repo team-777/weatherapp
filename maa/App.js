@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
-export default class App extends React.Component{
-    state = {
+class CounterButton extends React.Component{
+ state = {
     counter: 0,
     };
 
@@ -14,17 +14,28 @@ export default class App extends React.Component{
     };
 
     render(){
+    return (
+    <View>
+    <Text>{this.state.counter}</Text>
+    <Button title={'click me! - 1'}
+              onPress={
+              this.clickHandler2
+              }/>
+              </View>
+    );
+    }
+}
+
+export default class App extends React.Component{
+    render(){
       return (
-      <View style={styles.container}>
+             <View style={styles.container}>
           <Text style = {[styles.textBig, styles.textRed]}>Hello, World!</Text>
          <Button title={'click me!'}
           onPress={
           this.clickHandler
           }/>
-          <Button title={'click me! - 1'}
-          onPress={
-          this.clickHandler2
-          }/>
+          <CounterButton />
           </View>
           );
     }
