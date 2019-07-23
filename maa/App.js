@@ -1,8 +1,17 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
-export default function App() extends React.Component{
+export default class App extends React.Component{
+    state = {
+    counter: 0,
+    };
+
     clickHandler = () => console.log('Clicked!');
+    clickHandler2 = () =>{
+    this.setState({
+    counter: this.state.counter +1,
+    });
+    };
 
     render(){
       return (
@@ -11,6 +20,10 @@ export default function App() extends React.Component{
          <Button title={'click me!'}
           onPress={
           this.clickHandler
+          }/>
+          <Button title={'click me! - 1'}
+          onPress={
+          this.clickHandler2
           }/>
           </View>
           );
