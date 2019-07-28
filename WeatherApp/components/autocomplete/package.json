@@ -1,0 +1,25 @@
+{
+  "name": "@bit/primefaces.primereact.autocomplete",
+  "version": "3.1.0",
+  "homepage": "https://bit.dev/primefaces/primereact/autocomplete",
+  "main": "dist/autocomplete/AutoComplete.js",
+  "dependencies": {
+    "react": "^16.6.3",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "react-dom": "^16.6.3",
+    "@bit/primefaces.primereact.tooltip": "3.1.0",
+    "@bit/primefaces.primereact.button": "3.1.0",
+    "@bit/primefaces.primereact.inputtext": "3.1.0",
+    "@bit/primefaces.primereact.utils.dom-handler": "3.1.0",
+    "@bit/primefaces.primereact.utils.object-utils": "3.1.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.0"
+    }
+  }
+}
